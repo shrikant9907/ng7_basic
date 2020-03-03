@@ -1,0 +1,96 @@
+{
+  "configVersion": 1,
+  "timestamp": 1583227496743,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main-es2015.63624e27470710414c28.js",
+        "/main-es5.63624e27470710414c28.js",
+        "/manifest.webmanifest",
+        "/polyfills-es2015.442fa3cc45520cc0d518.js",
+        "/polyfills-es5.893b19c8168806d1dab3.js",
+        "/runtime-es2015.0811dcefd377500b5b1a.js",
+        "/runtime-es5.0811dcefd377500b5b1a.js",
+        "/scripts.18b7ee1ea1102bb4ec86.js",
+        "/styles.6fb2ab4b84f028170987.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/ajax-loader.c5cd7f5300576ab4c882.gif",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/blog-post.jpg",
+        "/assets/images/nav-icon.png",
+        "/slick.b7c9e1e479de3b53f1e4.woff",
+        "/slick.ced611daf7709cc778da.eot",
+        "/slick.d41f55a78e6f49a55128.ttf",
+        "/slick.f97e3bbf73254b011209.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/ajax-loader.c5cd7f5300576ab4c882.gif": "7a1aa43614396382bb15e5fde574d9cdcd21698f",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/images/blog-post.jpg": "f4ae1e60740adabdb4f212182d31720d04abd417",
+    "/assets/images/nav-icon.png": "a4150b7692f74e9787e8502031c6f41728a3c87e",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "aea3c896588e137ba9c4d89d0469ebe65287a888",
+    "/main-es2015.63624e27470710414c28.js": "47b6c274d47cebe326254f0e61ed78b93db0beb4",
+    "/main-es5.63624e27470710414c28.js": "3cc98244e9a162efdf15b7ab9456305f968aad75",
+    "/manifest.webmanifest": "4d9e68620d68e0304dc8298e249e6e74e9595bc6",
+    "/polyfills-es2015.442fa3cc45520cc0d518.js": "8779ed8d9bf0580e1b50b352a9b8fd520be24433",
+    "/polyfills-es5.893b19c8168806d1dab3.js": "8d03638471d7374e81cf33adfdea439f84ac3873",
+    "/runtime-es2015.0811dcefd377500b5b1a.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/runtime-es5.0811dcefd377500b5b1a.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/scripts.18b7ee1ea1102bb4ec86.js": "1c47c513fc4b23f98bc0ea91396410375fd3a15f",
+    "/slick.b7c9e1e479de3b53f1e4.woff": "af91c12f0f406a4f801aeb3b398768fe41d8f864",
+    "/slick.ced611daf7709cc778da.eot": "2dff0768f4c0a53228761eab917e2c65556042d4",
+    "/slick.d41f55a78e6f49a55128.ttf": "3331eebdd4ba348ef25abe00c39ffbe867d46575",
+    "/slick.f97e3bbf73254b011209.svg": "17f63c6f6131389462ba3d814b7ddf83344705f9",
+    "/styles.6fb2ab4b84f028170987.css": "7c089cc1a77bf97dd7833c6bdcfb963a8834bd35"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
