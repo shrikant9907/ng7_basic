@@ -44,26 +44,17 @@ export class AuthService {
 
   logOut() {
     sessionStorage.removeItem('token');
-    sessionStorage.removeItem('useremail');
-    sessionStorage.removeItem('loggedIn');
     this.router.navigate(['/login']);
   }
 
-  signup(email: string, password: string) {
-    
-      let params = {
-        'email': email,
-        'password': password
-      }
-
+  signup(params) {
+  
       return this.http.post<any>( this.signupUrl, params ).subscribe(data => {
-          sessionStorage.setItem('useremail', email);
           sessionStorage.setItem('token', data.token);
-          sessionStorage.setItem('loggedIn', 'true');
-          console.log("POST Signup Data", data);
+          console.log("Data", data);
         },
         error => {
-          console.log("POST Signup Error", error);
+          console.log("Error", error);
         }
       );
     

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/services/auth.service';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
@@ -15,11 +16,12 @@ export class LoginComponent implements OnInit {
   LoginForm: FormGroup;
   submitted = false;
   loginSuccess = false;
-
+  
   constructor(
     private router: Router,
     private formBuilder: FormBuilder,
-    private authService: AuthService
+    private authService: AuthService,
+    private toastr: ToastrService
   ) { 
     this.pageTitle = "Login";
   }
@@ -31,8 +33,8 @@ export class LoginComponent implements OnInit {
 
     // Form Group
     this.LoginForm = this.formBuilder.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(6)]],
+      email: ['eve.holt@reqres.in', [Validators.required, Validators.email]],
+      password: ['cityslicka', [Validators.required, Validators.minLength(6)]],
     });
 
   }
@@ -42,16 +44,22 @@ export class LoginComponent implements OnInit {
 
     this.submitted = true;
 
-    if(this.LoginForm.invalid)
+    if(this.LoginForm.invalid) {
+      this.toastr.error('Invalid Login', 'Error', {
+        timeOut: 1000
+      }); 
       return;
-
+    }
+    
     let email = this.LoginForm.controls.email.value;
     let password = this.LoginForm.controls.password.value;
     
     if(this.authService.authenticate(email, password)) {
       this.loginSuccess = true;
+      this.toastr.success('Login successful', 'Success', {
+        timeOut: 1000
+      }); 
       this.router.navigate(['/dashboard']);
-      console.log("login success..");
     } 
     
   }
