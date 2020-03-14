@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavdataService } from "../../services/navdata.service";
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   navItems: object;
 
   constructor(
-    private navData: NavdataService
+    private data: DataService
   ) {
   }
 
@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
       //   this.navItems = data;
       // });
   
-      this.navItems = this.navData.getHeaderNav();
+      this.navItems = this.data.getHeaderNav();
      
   }
 

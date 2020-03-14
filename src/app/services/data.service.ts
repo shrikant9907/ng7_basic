@@ -4,14 +4,13 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class NavdataService {
+export class DataService {
 
   constructor(
-    private http: HttpClient
+    private httpClient: HttpClient
   ) { }
 
   getHeaderNav() {
-  
     return [
       {
         'name': 'Home',
